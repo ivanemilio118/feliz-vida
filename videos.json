@@ -1,0 +1,18 @@
+[
+  {
+    "nombre":"Papá",
+    "video":"videos/mario.mp4"
+  },
+  {
+    "nombre":"Paula",
+    "video":"videos/paula.mp4"
+  },
+   {
+    "nombre":"Víctor",
+    "video":"videos/victor.mp4"
+  },
+  {
+    "nombre":"Tio Alberto",
+    "video":"videos/tioalberto.mp4"
+  }
+]
