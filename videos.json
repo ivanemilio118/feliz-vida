@@ -4,12 +4,72 @@
     "video":"videos/mario.mp4"
   },
   {
+    "nombre":"Hernán",
+    "video":"videos/hernan.mp4"
+  },
+  {
     "nombre":"Paula",
     "video":"videos/paula.mp4"
   },
    {
     "nombre":"Víctor",
     "video":"videos/victor.mp4"
+  },
+  {
+    "nombre":"Adrián",
+    "video":"videos/adrian.mp4"
+  },
+  {
+    "nombre":"Amalia",
+    "video":"videos/amalia.mp4"
+  },
+  {
+    "nombre":"Edurne",
+    "video":"videos/edurne.mp4"
+  },
+  {
+    "nombre":"Mayra Suegra",
+    "video":"videos/mayra.mp4"
+  },
+  {
+    "nombre":"Iván Suegro",
+    "video":"videos/ivan.mp4"
+  },
+  {
+    "nombre":"Majo",
+    "video":"videos/majo.mp4"
+  },
+  {
+    "nombre":"Emma",
+    "video":"videos/emma.mp4"
+  },
+  {
+    "nombre":"Layla y Lua",
+    "video":"videos/laylaylua.mp4"
+  },
+  {
+    "nombre":"Prima Natalia",
+    "video":"videos/primanatalia.mp4"
+  },
+  {
+    "nombre":"Tia Tita y Tia Margarita",
+    "video":"videos/titaymargarita.mp4"
+  },
+  {
+    "nombre":"Prima Marjorie",
+    "video":"videos/primamarjorie.mp4"
+  },
+  {
+    "nombre":"Tio Caliche y Margarita",
+    "video":"videos/tiocalicheymargarita.mp4"
+  },
+  {
+    "nombre":"Tio Oscar y Gloria",
+    "video":"videos/tiooscarygloria.mp4"
+  },
+  {
+    "nombre":"Tio Jairo y Mujer",
+    "video":"videos/tiojairoymujer.mp4"
   },
   {
     "nombre":"Tio Alberto",

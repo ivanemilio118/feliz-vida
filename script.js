@@ -1,30 +1,68 @@
+let videosData = [];
+let currentIndex = 0;
+
 fetch("videos.json")
 .then(response => response.json())
 .then(videos => {
 
-const container =
-document.getElementById("videos-container");
+videosData = videos;
 
-videos.forEach(video => {
+showVideo(0);
 
-const card =
-document.createElement("div");
+document
+.getElementById("prevBtn")
+.addEventListener("click",()=>{
 
-card.className = "video-card";
+currentIndex--;
 
-card.innerHTML = `
+if(currentIndex < 0){
+currentIndex = videosData.length - 1;
+}
+
+showVideo(currentIndex);
+
+});
+
+document
+.getElementById("nextBtn")
+.addEventListener("click",()=>{
+
+currentIndex++;
+
+if(currentIndex >= videosData.length){
+currentIndex = 0;
+}
+
+showVideo(currentIndex);
+
+});
+
+});
+
+function showVideo(index){
+
+const video = videosData[index];
+
+document
+.getElementById("videos-container")
+.innerHTML = `
+<div class="video-card">
+
 <h3>${video.nombre}</h3>
 
 <video controls>
 <source src="${video.video}" type="video/mp4">
 </video>
+
+</div>
 `;
 
-container.appendChild(card);
+document
+.getElementById("counter")
+.innerHTML =
+`${index+1} / ${videosData.length}`;
 
-});
-
-});
+}
 
 function createPetal(){
 
