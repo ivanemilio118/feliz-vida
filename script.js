@@ -87,4 +87,6 @@ petal.remove();
 
 }
 
+
+
 setInterval(createPetal,400);

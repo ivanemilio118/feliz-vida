@@ -64,6 +64,118 @@ Todas las personas que te quieren tienen algo que decirte...
 </div>
 
 </section>
+<section id="sorpresa">
+
+    <!-- BOTÓN INICIAL -->
+    <div id="inicio">
+        <div class="carta-boton" onclick="mostrarPregunta()">
+            💌
+            <p>Tengo una sorpresa para ti</p>
+        </div>
+    </div>
+
+    <!-- PREGUNTA -->
+    <div id="pregunta-container" class="oculto">
+
+        <h2>❤️ Una pregunta antes ❤️</h2>
+
+        <p>¿Dónde fue nuestra primera cita?</p>
+
+        <input
+            type="text"
+            id="respuesta"
+            placeholder="Escribe tu respuesta..."
+        >
+
+        <button onclick="comprobarRespuesta()">
+            Comprobar
+        </button>
+
+        <p id="error"></p>
+
+    </div>
+
+    <!-- CARTA FINAL -->
+    <div id="carta-container" class="oculto">
+
+        <div class="carta-final" onclick="abrirCarta()">
+            💌
+            <p>Pulsa para abrir</p>
+        </div>
+
+        <div id="mensaje" class="mensaje oculto">
+
+            <h2>Para mi Amor ❤️</h2>
+
+            <p>
+                Mi amor,
+
+                espero que sigas cumpliendo tus metas, tus sueños y que cumplas muchos años más. Yo haré todo y daré todo lo que tengo para que sea a mi lado.
+                Como ves, muchas personas te quieren, te recuerdan y te desean lo mejor, y es normal, pues eres una mujer muy especial, muy emocional y muy empática, lo que hace que sea muy fácil
+                empatizar contigo.
+
+                Deseo de todo corazón que este pequeño detalle te haga feliz, y pueda ver una sonrisa en tu rostro, pues no hay cosa que me haga más feliz en este mundo.
+
+            </p>
+
+            <p>
+                 Te amo, siempre. ❤️
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script>
+
+function mostrarPregunta() {
+
+    document.getElementById("inicio").style.display = "none";
+
+    document
+        .getElementById("pregunta-container")
+        .classList.remove("oculto");
+}
+
+function comprobarRespuesta() {
+
+    const respuesta =
+        document.getElementById("respuesta")
+        .value
+        .trim()
+        .toLowerCase();
+
+    if (respuesta === "xambel") {
+
+        document
+            .getElementById("pregunta-container")
+            .style.display = "none";
+
+        document
+            .getElementById("carta-container")
+            .classList.remove("oculto");
+
+    } else {
+
+        document.getElementById("error").innerHTML =
+            "❤️ Pista: fue nuestro primer restaurante ❤️";
+    }
+}
+
+function abrirCarta() {
+
+    document
+        .querySelector(".carta-final")
+        .style.display = "none";
+
+    document
+        .getElementById("mensaje")
+        .classList.remove("oculto");
+}
+
+</script>
 
 <script src="script.js"></script>
 

@@ -4,8 +4,28 @@
     "video":"videos/mario.mp4"
   },
   {
+    "nombre":"Mamá",
+    "video":"videos/alejandra.mp4"
+  },
+  {
+    "nombre":"Johana, Juan Carlos y Juan Pablo",
+    "video":"videos/lady.mp4"
+  },
+  {
+    "nombre":"Alessandra",
+    "video":"videos/alessandra.mp4"
+  },
+  {
     "nombre":"Hernán",
     "video":"videos/hernan.mp4"
+  },
+  {
+    "nombre":"Duke",
+    "video":"videos/duke.mp4"
+  },
+  {
+    "nombre":"Kira",
+    "video":"videos/kira.mp4"
   },
   {
     "nombre":"Paula",
@@ -28,12 +48,28 @@
     "video":"videos/edurne.mp4"
   },
   {
-    "nombre":"Mayra Suegra",
-    "video":"videos/mayra.mp4"
+    "nombre":"Daniela y Víctor",
+    "video":"videos/daniela.mp4"
+  },
+  {
+    "nombre":"Alexis",
+    "video":"videos/alexis.mp4"
+  },
+  {
+    "nombre":"Aitor y Joel",
+    "video":"videos/aitoryjoel.mp4"
+  },
+  {
+    "nombre":"Andrés",
+    "video":"videos/andres.mp4"
   },
   {
     "nombre":"Iván Suegro",
     "video":"videos/ivan.mp4"
+  },
+  {
+    "nombre":"Mayra Suegra",
+    "video":"videos/mayra.mp4"
   },
   {
     "nombre":"Majo",
@@ -52,8 +88,20 @@
     "video":"videos/primanatalia.mp4"
   },
   {
+    "nombre":"Alexito",
+    "video":"videos/alexito.mp4"
+  },
+  {
+    "nombre":"Conny y Leonardo",
+    "video":"videos/conny.mp4"
+  },
+  {
     "nombre":"Tia Tita y Tia Margarita",
     "video":"videos/titaymargarita.mp4"
+  },
+  {
+    "nombre":"Paco",
+    "video":"videos/paco.mp4"
   },
   {
     "nombre":"Prima Marjorie",
