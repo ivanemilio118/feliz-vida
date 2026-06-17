@@ -169,7 +169,42 @@ color:#d63384;
     display:none;
 }
 
-.carta-boton,
+.carta-boton{
+    width:250px;
+    height:170px;
+
+    margin:auto;
+
+    background:white;
+
+    border-radius:15px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.15);
+
+    cursor:pointer;
+
+    transition:.4s;
+}
+
+.carta-boton:hover{
+    transform:translateY(-10px) scale(1.05);
+}
+
+.carta-boton p{
+    margin-top:10px;
+    color:#d63384;
+    font-weight:600;
+}
+
+.carta-boton::before{
+    content:"💌";
+    font-size:60px;
+}
 .carta-final{
     font-size:90px;
     cursor:pointer;
@@ -177,7 +212,7 @@ color:#d63384;
     transition:0.4s;
 }
 
-.carta-boton:hover,
+
 .carta-final:hover{
     transform:scale(1.1);
 }
@@ -202,4 +237,32 @@ color:#d63384;
         opacity:1;
         transform:translateY(0);
     }
+}
+
+#sorpresa{
+    padding:80px 20px;
+    text-align:center;
+}
+
+#pregunta-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#pregunta-container.oculto{
+    display:none;
+}
+
+.pregunta-box{
+    background:white;
+
+    width:100%;
+    max-width:500px;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
 }
