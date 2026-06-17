@@ -366,9 +366,52 @@ color:#d63384;
 .game-btn:hover{
     transform:scale(1.05);
 }
+
 .game-section{
-
     text-align:center;
+    padding:80px 20px;
+}
 
-    padding:60px 20px;
+.game-section h2{
+    color:#d63384;
+    margin-bottom:20px;
+}
+
+@media (max-width:768px){
+
+    .polaroid-board{
+
+        position:static;
+
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:25px;
+
+        height:auto;
+    }
+
+    .polaroid{
+
+        position:static;
+
+        transform:none !important;
+
+        width:90%;
+        max-width:280px;
+    }
+
+
+    
+}
+
+@media (max-width:768px){
+
+    .overlay h1{
+        font-size:3rem;
+    }
+
 }

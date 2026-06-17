@@ -66,3 +66,33 @@ body{
         top:100vh;
     }
 }
+
+.back-btn{
+
+    display:inline-block;
+
+    margin-top:15px;
+    margin-bottom:20px;
+
+    padding:12px 25px;
+
+    background:#d63384;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:25px;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.back-btn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+    0 5px 15px rgba(214,51,132,.4);
+}
