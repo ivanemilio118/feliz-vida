@@ -87,6 +87,8 @@ petal.remove();
 
 }
 
-
+function abrirRecuerdo(texto){
+    alert(texto);
+}
 
 setInterval(createPetal,400);

@@ -266,3 +266,91 @@ color:#d63384;
 
     box-shadow:0 8px 25px rgba(0,0,0,.12);
 }
+
+.polaroids{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.polaroid-board{
+    position:relative;
+    height:500px;
+}
+
+.polaroid{
+    position:absolute;
+
+    width:220px;
+
+    background:white;
+
+    padding:10px;
+
+    border-radius:5px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+    cursor:pointer;
+
+    transition:.4s;
+}
+
+.polaroid img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.polaroid span{
+    display:block;
+    margin-top:10px;
+    font-weight:bold;
+}
+
+.polaroid:hover{
+    transform:scale(1.1) rotate(0deg);
+    z-index:100;
+}
+
+.polaroid:nth-child(1){
+    top:30px;
+    left:15%;
+    transform:rotate(-10deg);
+}
+
+.polaroid:nth-child(2){
+    top:120px;
+    left:40%;
+    transform:rotate(8deg);
+}
+
+.polaroid:nth-child(3){
+    top:50px;
+    left:65%;
+    transform:rotate(-5deg);
+}
+
+.game-btn{
+
+    display:inline-block;
+
+    background:#d63384;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:15px 30px;
+
+    border-radius:20px;
+
+    margin:20px auto;
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+.game-btn:hover{
+    transform:scale(1.05);
+}
