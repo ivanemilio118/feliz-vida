@@ -82,7 +82,7 @@ function startLevel(){
     clearInterval(gameInterval);
 
     gameInterval =
-    setInterval(createFace,700);
+    setInterval(createFace,300);
 }
 
 function createFace(){

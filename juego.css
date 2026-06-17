@@ -41,9 +41,10 @@ body{
 .face{
     position:absolute;
 
-    width:90px;
-    height:90px;
+    width:70px;
+    height:70px;
 
+    object-fit:contain;
     object-fit:cover;
 
     cursor:pointer;
