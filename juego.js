@@ -10,39 +10,49 @@ document.getElementById("goal");
 const levelTitle =
 document.getElementById("level-title");
 
+let lives = 3;
+
+const livesElement =
+document.getElementById("lives");
+
 const levels = [
 
     {
         goal:10,
-        speed:5000,
+        speed:7000,
+        spawn:1800,
         title:"Nivel 1 - Karina ❤️",
         image:"img/karina.png"
     },
 
     {
-        goal:15,
-        speed:4200,
+        goal:10,
+        speed:6000,
+        spawn:1600,
         title:"Nivel 2 - Paola 💕",
         image:"img/paola.png"
     },
 
     {
-        goal:20,
-        speed:3400,
+        goal:15,
+        speed:5000,
+        spawn:1400,
         title:"Nivel 3 - Ariana ✨",
         image:"img/ariana.png"
     },
 
     {
-        goal:25,
-        speed:2500,
+        goal:15,
+        speed:4000,
+        spawn:1200,
         title:"Nivel 4 - Yoongi 🔥",
         image:"img/yoongi.png"
     },
 
     {
-        goal:30,
-        speed:1800,
+        goal:20,
+        speed:3000,
+        spawn:1000,
         title:"Nivel 5 - Pirata 👑",
         image:"img/pirata.png"
     }
@@ -65,6 +75,8 @@ startLevel();
 
 function startLevel(){
 
+    updateLives();
+
     score = 0;
 
     const level =
@@ -82,7 +94,7 @@ function startLevel(){
     clearInterval(gameInterval);
 
     gameInterval =
-    setInterval(createFace,300);
+    setInterval(createFace,level.spawn);
 }
 
 function createFace(){
@@ -122,7 +134,19 @@ function createFace(){
 
     setTimeout(()=>{
 
-        face.remove();
+        if(document.body.contains(face)){
+
+            face.remove();
+
+            lives--;
+
+            updateLives();
+
+            if(lives <= 0){
+
+                gameOver();
+            }
+        }
 
     }, level.speed);
 
@@ -147,4 +171,44 @@ function nextLevel(){
     }
 
     startLevel();
+}
+
+function updateLives(){
+
+    let html = "";
+
+    for(let i=0;i<3;i++){
+
+        if(i < lives){
+            html += "❤️ ";
+        }else{
+            html += "🖤 ";
+        }
+
+    }
+
+    livesElement.innerHTML = html;
+}
+
+function gameOver(){
+
+    clearInterval(gameInterval);
+
+    document.body.innerHTML = `
+
+        <div class="victory">
+
+            <h1>💔 Has perdido 💔</h1>
+
+            <p>
+                Se te han escapado demasiados famosos...
+            </p>
+
+            <button onclick="location.reload()">
+                Volver a intentarlo
+            </button>
+
+        </div>
+
+    `;
 }
