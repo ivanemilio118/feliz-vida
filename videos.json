@@ -1,5 +1,13 @@
 [
   {
+    "nombre":"Amor",
+    "video":"videos/emilio.mp4"
+  },
+  {
+    "nombre":"Smoky",
+    "video":"videos/smoky.mp4"
+  },
+  {
     "nombre":"Papá",
     "video":"videos/mario.mp4"
   },
@@ -26,6 +34,10 @@
   {
     "nombre":"Kira",
     "video":"videos/kira.mp4"
+  },
+  {
+    "nombre":"H",
+    "video":"videos/h.mp4"
   },
   {
     "nombre":"Paula",
@@ -88,6 +100,14 @@
     "video":"videos/manoloymary.mp4"
   },
   {
+    "nombre":"Abuelito Viche",
+    "video":"videos/viche.mp4"
+  },
+  {
+    "nombre":"Abuelita Mercy",
+    "video":"videos/mercy.mp4"
+  },
+  {
     "nombre":"Layla y Lua",
     "video":"videos/laylaylua.mp4"
   },
@@ -98,6 +118,14 @@
   {
     "nombre":"Alexito",
     "video":"videos/alexito.mp4"
+  },
+  {
+    "nombre":"Tio Omar",
+    "video":"videos/tioomar.mp4"
+  },
+  {
+    "nombre":"Gloria",
+    "video":"videos/gloria.mp4"
   },
   {
     "nombre":"Conny y Leonardo",
